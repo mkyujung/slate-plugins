@@ -5,6 +5,9 @@
     "packages/core",
     "packages/slate-plugins"
   ],
+  "precommit": [
+    "build"
+  ],
   "scripts": {
     "build": "lerna run build --since",
     "build:w": "concurrently \"yarn build:core -w\" \"yarn build:plugins -w\"",
